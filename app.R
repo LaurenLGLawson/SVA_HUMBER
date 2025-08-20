@@ -87,7 +87,7 @@ server <- function(input, output) {
                                    "Commercial Parking" = "darkslategray2")) +
       scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE)) +
       labs(
-        x = "Watershed",
+        x = "Subwatershed",
         y = "Total Loading (kg)",
         fill = "Surface Type"
       ) +
@@ -115,6 +115,7 @@ server <- function(input, output) {
 
 # Run the app
 shinyApp(ui = ui, server = server)
+
 
 
 
